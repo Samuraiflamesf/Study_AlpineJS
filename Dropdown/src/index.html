@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TA Animations</title>
+        <link href="./css/styles.css" rel="stylesheet" />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+        ></script>
+    </head>
+    <body class="bg-gray-200">
+        <div class="p-10">
+            <div
+                x-data="{
+                opened:false,
+            }"
+            >
+                <button
+                    @click="opened = !opened"
+                    class="bg-blue-500 px-4 py-2 rounded-lg text-white hover:bg-blue-600 transition duration-200"
+                >
+                    My dropdown
+                </button>
+                <div
+                    x-show="opened" x-transition @click.away="opened = false"
+                    class="bg-white p-4 rounded-xl absolute shadow-2xl w-96"
+                >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laborum aperiam velit adipisci autem, similique nisi
+                    repellendus totam animi quos placeat dolore repudiandae at
+                    nobis et incidunt in laboriosam assumenda. Maiores!
+                </div>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo et
+                dolore quidem ullam vero. Nemo, ea iure placeat inventore soluta
+                pariatur. Molestias amet veritatis quibusdam numquam, voluptates
+                adipisci tempora nemo!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo et
+                dolore quidem ullam vero. Nemo, ea iure placeat inventore soluta
+                pariatur. Molestias amet veritatis quibusdam numquam, voluptates
+                adipisci tempora nemo!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo et
+                dolore quidem ullam vero. Nemo, ea iure placeat inventore soluta
+                pariatur. Molestias amet veritatis quibusdam numquam, voluptates
+                adipisci tempora nemo!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo et
+                dolore quidem ullam vero. Nemo, ea iure placeat inventore soluta
+                pariatur. Molestias amet veritatis quibusdam numquam, voluptates
+                adipisci tempora nemo!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo et
+                dolore quidem ullam vero. Nemo, ea iure placeat inventore soluta
+                pariatur. Molestias amet veritatis quibusdam numquam, voluptates
+                adipisci tempora nemo!
+            </p>
+        </div>
+        <!-- Certifique-se de incluir o script do Alpine.js antes deste código -->
+    </body>
+</html>
